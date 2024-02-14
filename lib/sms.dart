@@ -45,9 +45,7 @@ class _SMSState extends State<SMS> {
                 controller: controller,
                 keyboardType: TextInputType.number,
                 onEditingComplete: (){
-                  setState(() {
-                    number = controller.text;
-                  });
+                  number = controller.text;
                 },
                 decoration: InputDecoration(
                   hintText: 'Enter your Number',
